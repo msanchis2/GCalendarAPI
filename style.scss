@@ -1,0 +1,45 @@
+$darkPink: #b00b70;
+$lightPink: #ecafd1; 
+
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div{
+    background-color: #f2f2f2;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5%;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    margin: auto
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    border: 2px solid $darkPink;
+    border-radius: 50px;
+    padding-left: 15px;
+    &:focus{
+        outline: none;
+    }
+    &[type="submit"]{
+        background-color: $lightPink;
+        margin-top: 20px;
+        &:hover{
+            border: 2px solid $lightPink;
+            background-color: $darkPink;
+        }
+    }
+}
+
+label,p{
+    text-align: center;
+    margin: 10px;
+}
