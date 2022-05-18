@@ -91,6 +91,9 @@ const createEvent = () => {
       
     request.execute(function(event) {
         console.log('Event created: ' + event.htmlLink);
+        let p = document.querySelector("#alert");
+        let txt = document.createTextNode("Evento creado correctamente");
+        p.appendChild(txt);
     });
 }
 
